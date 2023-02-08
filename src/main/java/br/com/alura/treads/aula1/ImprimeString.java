@@ -1,4 +1,4 @@
-package br.com.alura;
+package br.com.alura.treads.aula1;
 
 public class ImprimeString implements Runnable{
     @Override

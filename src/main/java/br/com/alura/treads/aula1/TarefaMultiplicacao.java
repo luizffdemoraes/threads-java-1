@@ -1,4 +1,4 @@
-package br.com.alura;
+package br.com.alura.treads.aula1;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

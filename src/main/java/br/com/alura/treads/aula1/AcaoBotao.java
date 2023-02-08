@@ -1,5 +1,5 @@
 
-package br.com.alura;
+package br.com.alura.treads.aula1;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
