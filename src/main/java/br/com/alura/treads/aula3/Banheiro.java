@@ -14,9 +14,12 @@ public class Banheiro {
 
             System.out.println(nome + " entrando no banheiro");
 
-            if (this.ehSujo) {
+            while (this.ehSujo) {
                 esperaLaFora(nome);
             }
+
+            System.out.println(nome + " batendo na porta");
+
 
             System.out.println(nome + " fazendo coisa rapida");
 
@@ -25,6 +28,8 @@ public class Banheiro {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+
+            this.ehSujo = true;
 
             System.out.println(nome + " dando descarga");
             System.out.println(nome + " lavando a mao");
@@ -90,7 +95,7 @@ public class Banheiro {
         }
     }
 
-    private void esperaLaFora(String nome) {
+    public void esperaLaFora(String nome) {
 
         System.out.println(nome + ", eca, banheiro está sujo");
         try {

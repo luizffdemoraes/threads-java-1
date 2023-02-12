@@ -22,5 +22,6 @@ public class Principal {
 
         //inicialização dos outros threads omitida
         limpeza.start();
+        limpeza.setDaemon(true);
     }
 }
